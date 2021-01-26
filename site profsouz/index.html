@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <title>Добро пожаловать</title>
+</head>
+
+<body>
+    <header>
+        <div class="head">
+            <div class="ico"><a href="#"><img src="/img/ico.png" alt="logoMenu"></a></div>
+            <h1>Профсоюз Автобазы №2</h1>
+        </div>
+    </header>
+    <nav id='menuVertical'>
+        <ul>
+            <li>
+                <a href="#">
+                    <div class="img__menu"><img src="/img/earth.png" alt="ой, меню1"></div>
+                    <span>Меню1</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="img__menu"><img src="/img/door.png" alt="ой, меню2"></div>
+                    <span>Меню2</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="img__menu"><img src="/img/profle.png" alt="ой, меню3"></div>
+                    <span>Меню3</span>
+                </a>
+                <ul>
+                    <li><a href="#">Подменю3.1</a></li>
+                    <li><a href="#">Подменю3.2</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <script type="module">
+        import Mainmenu from '/js/mainmenu.js'
+        let mainMenu = new Mainmenu();
+        header.append(mainMenu.elem);
+
+
+    </script>
+
+    <section>
+        <div class="container">
+            <div class="table__main">
+                <table id='table'>
+                    <thead>
+                        <tr>
+                            <th>Заголовок1</th>
+                            <th>Заголовок1</th>
+                            <th>Заголовок1</th>
+                            <th>Заголовок1</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
